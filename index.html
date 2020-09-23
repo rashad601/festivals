@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>Festival</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="my.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/15040002973_d232e78077_b.jpg");
+  min-height: 75%;
+}
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="top">
+  <div class="row padding black">
+    <div class="col s3">
+      <a href="index.html" class="button block orange">HOME</a>
+    </div>
+    <div class="col s3">
+      <a href="about.html" class="button block orange">ABOUT FESTIVAL</a>
+    </div>
+    <div class="col s3">
+      <a href="contact.html" class="button block orange">CONTACT US</a>
+    </div>
+    <div class="col s3">
+      <a href="developer.html" class="button block orange">DEVELOPER</a>
+	  
+    </div>
+	
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg display-container grayscale-min" id="home">
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="sand grayscale large">
+
+<!-- About Container -->
+<div class="container" id="about">
+  <div class="content" style="max-width:700px">
+   <!-- <h5 class="center padding-64"><span class="tag wide">THE FESTIVAL</span></h5>
+    -->
+	
+    <div class="panel leftbar light-grey">
+      <p><i>"The word "Festival" is an organized set of events, such as plays or  musical performances, usually happening in one place, or a special day or period, usually in memory of a religious event, with its own social activities, food, or ceremonies"</i></p>
+      <!--<p>Chef, Coffeeist and Owner: Liam Brown</p>-->
+	 
+    </div>
+	<p>A festival is an event ordinarily celebrated by a community and centering on some characteristic aspect of that community and its religion or cultures. It is often marked as a local or national holiday, mela, or eid. A festival constitutes typical cases of glocalization, as well as the high culture-low culture interrelationship.[1] Next to religion and folklore, a significant origin is agricultural. Food is such a vital resource that many festivals are associated with harvest time. Religious commemoration and thanksgiving for good harvests are blended in events that take place in autumn, such as Halloween in the northern hemisphere and Easter in the southern.</p>
+    <p>Festivals often serve to fulfill specific communal purposes, especially in regard to commemoration or thanking to the gods and goddesses. Celebrations offer a sense of belonging for religious, social, or geographical groups, contributing to group cohesiveness. They may also provide entertainment, which was particularly important to local communities before the advent of mass-produced entertainment. Festivals that focus on cultural or ethnic topics also seek to inform community members of their traditions; the involvement of elders sharing stories and experience provides a means for unity among families.</p>
+    <img src="img/collage.jpg" style="width:100%;max-width:1000px" class="margin-top">
+  
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="center light-grey padding-48 large">
+  <p>Designed by student name</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

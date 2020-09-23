@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Festival</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="my.css">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="gallery.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/15040002973_d232e78077_b.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="top">
+  <div class="row padding black">
+    <div class="col s3">
+      <a href="index.html" class="button block orange">HOME</a>
+    </div>
+    <div class="col s3">
+      <a href="about.html" class="button block orange">ABOUT FESTIVAL</a>
+    </div>
+    <div class="col s3">
+      <a href="contact.html" class="button block orange">CONTACT US</a>
+    </div>
+    <div class="col s3">
+      <a href="developer.html" class="button block orange">DEVELOPER</a>
+	</div>
+	
+  </div>
+</div>
+
+
+<div class="sand grayscale large">
+
+<!-- About Container -->
+ 
+<div class="container" id="about">
+  <div class="content" style="max-width:700px">
+    <h5 class="center padding-64"><span class="tag wide">Christmas</span></h5>
+	<div class="container p-3">
+
+        <div class="fg-gallery">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+            <img src="images/7.jpg" alt="">
+            <img src="images/8.jpg" alt="">
+        </div>
+
+        <!--<div class="fg-gallery ns">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+        </div>-->
+
+    </div>
+  
+    <div class="panel leftbar light-grey">
+      <p><i>"Christmas is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world."</i></p>
+   </div>
+   <img src="img/christmas.jpg" style="width:100%;max-width:1000px" class="margin-top">
+   <p>Christmas is an annual holiday celebrated by the Christians, on 25th December, in the major part of the world, to celebrate the Nativity of Jesus Christ. Christians believe that Jesus is the son of God, the Messiah sent from Heaven to save the world. </p>
+
+<p>It is believed that Jesus was born to Mary in Bethlehem around two thousand years ago. Jesus was born in a manger because there was no room for him and for his parents, Mary and Joseph. The word Christmas comes from Cristes maesse, an early English phrase that means Mass of Christ. </p>
+<p>Christmas is a festival that fills joy, happiness and love in people's life. On this day, people go to church, sing carols, take part in special religious services, exchange gifts, decorate their homes with holly, mistletoe, lights, flowers and Christmas trees and organize family gatherings. On the Christmas Eve, churches around the world hold evening services. At midnight, most churches hold special candlelight services. Santa Claus is a popular character in the Christmas celebration who brings gifts for the children.</p>
+    <img src="img/christmas1.jpg" style="width:100%;max-width:1000px" class="margin-top">
+   
+  
+  </div>
+  
+</div>
+
+<!-- Menu Container -->
+<script>
+        var a = new FgGallery('.fg-gallery', {
+            cols: 4,
+            style: {
+                border: '10px solid #fff',
+                height: '180px',
+                borderRadius: '5px',
+                boxShadow: '0 2px 10px -5px #858585',
+            }
+        })
+
+        var a = new FgGallery('.ns', {
+            cols: 3,
+            style: {
+                border: '0 solid #fff',
+                height: '240px',
+                borderRadius: '5px',
+            }
+        })
+    </script>
+
+<!-- Footer -->
+<footer class="center light-grey padding-48 large">
+  <p>Designed by student name</p>
+</footer>
+
+</body>
+</html>

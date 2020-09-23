@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>Festival</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="my.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/15040002973_d232e78077_b.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="top">
+  <div class="row padding black">
+    <div class="col s3">
+      <a href="index.html" class="button block orange">HOME</a>
+    </div>
+    <div class="col s3">
+      <a href="about.html" class="button block orange">ABOUT FESTIVAL</a>
+    </div>
+    <div class="col s3">
+      <a href="contact.html" class="button block orange">CONTACT US</a>
+    </div>
+    <div class="col s3">
+      <a href="developer.html" class="button block orange">DEVELOPER</a>
+	  
+    </div>
+	
+  </div>
+</div>
+
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="sand grayscale large">
+
+<!-- About Container -->
+
+<!-- Menu Container -->
+<div class="container" id="menu">
+  <div class="content" style="max-width:700px">
+ 
+    <h5 class="center padding-48"><span class="tag wide">Developer</span></h5>
+  
+    <div class="row center card padding">
+      <a href="javascript:void(0)" onClick="openMenu(event, 'Eat');" id="myLink">
+        <div class="col s6 tablink">Rashad Abdul Rasheed </div>
+      </a>
+      <a href="javascript:void(0)" onClick="openMenu(event, 'Drinks');">
+        <div class="col s6 tablink">Muhammed khan </div>
+      </a>
+    </div>
+
+    <div id="Eat" class="container menu padding-48 card">
+      <h5>Name:</h5>
+      <p class="text-grey">rashad</p><br>
+    
+      <h5>RollNo:</h5>
+      <p class="text-grey">123</p><br>
+    
+      <h5>Design</h5>
+      <p class="text-grey">various website design decision (i.e. color, div area,images, menu content etc..)</p><br>
+    
+      <h5>Validation</h5>
+      <p class="text-grey">Javascript validation in contact us form</p><br>
+    
+      <h5>Content</h5>
+      <p class="text-grey">Get content of various festival (i.e christams , ganesh chaturthi, holi)</p>
+    </div>
+
+    <div id="Drinks" class="container menu padding-48 card">
+       <h5>Name:</h5>
+      <p class="text-grey">moshi</p><br>
+    
+      <h5>Design:</h5>
+      <p class="text-grey">various website design decision (i.e. color, div area,images, menu content etc..)</p><br>
+    
+      <h5>Validation</h5>
+      <p class="text-grey">Html Validation in contact us form</p><br>
+    
+      <h5>Content</h5>
+      <p class="text-grey">Get content of various festival (i.e. holi , diwali, dusherra, janmastami)</p><br>
+    
+     
+    </div>  
+   <hr>
+  </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="center light-grey padding-48 large">
+  <p>Designed by Rashad</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>Festival</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="my.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/15040002973_d232e78077_b.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="top">
+  <div class="row padding black">
+    <div class="col s3">
+      <a href="index.html" class="button block orange">HOME</a>
+    </div>
+    <div class="col s3">
+      <a href="about.html" class="button block orange">ABOUT FESTIVAL</a>
+    </div>
+    <div class="col s3">
+      <a href="contact.html" class="button block orange">CONTACT US</a>
+    </div>
+    <div class="col s3">
+      <a href="developer.html" class="button block orange">DEVELOPER</a>
+	  
+    </div>
+	
+  </div>
+</div>
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="sand grayscale large">
+
+<!-- About Container -->
+
+
+<!-- Menu Container -->
+
+
+<!-- Contact/Area Container -->
+<div class="container" id="where" style="padding-bottom:32px;">
+  <div class="content" style="max-width:700px">
+  <h5> &nbsp;</h5>
+    <h5 class="center padding-48"><span class="tag wide">WHERE TO FIND US</span></h5>
+ 
+   <!-- <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>-->
+    <form name="form1" action="/action_page.php" target="_blank">
+      <p>First Name:<input class="input padding-16 border" type="text" placeholder="Name" required name="Name"></p>
+	  <p>Last Name:<input class="input padding-16 border" type="text" placeholder="Last Name" required name="Last Name"></p>
+	  <p>Email:<input class="input padding-16 border" type="text" placeholder="Email" required name="Email"></p>
+	  <p>Phone:<input class="input padding-16 border" type="text" pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number"  placeholder="Phone" required name="Phone"></p>
+   
+      <p>Place Your Question Here:<input class="input padding-16 border" type="text" placeholder="What is your Question" required name="Message"></p>
+      <p><button class="button black" type="submit" onClick="send_msg();">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="center light-grey padding-48 large">
+  <p>Designed by student name</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function ValidateEmail(mail) 
+{//alert(mail);
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return (true)
+  }
+    //alert("You have entered an invalid email address!")
+    return (false)
+}
+
+function send_msg()
+{
+	if(ValidateEmail(document.form1.Email.value)==false)
+	{
+	alert("You have entered an invalid email address!");
+	document.form1.Email.focus();return false;
+	}
+	//alert("dfdsfs");
+}
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

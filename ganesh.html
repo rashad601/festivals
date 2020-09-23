@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Festival</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="my.css">
+ <link rel="stylesheet" href="gallery.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="gallery.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/15040002973_d232e78077_b.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="top">
+  <div class="row padding black">
+    <div class="col s3">
+      <a href="index.html" class="button block orange">HOME</a>
+    </div>
+    <div class="col s3">
+      <a href="about.html" class="button block orange">ABOUT FESTIVAL</a>
+    </div>
+    <div class="col s3">
+      <a href="contact.html" class="button block orange">CONTACT US</a>
+    </div>
+    <div class="col s3">
+      <a href="developer.html" class="button block orange">DEVELOPER</a>
+	  
+    </div>
+	
+  </div>
+</div>
+
+
+<div class="sand grayscale large">
+
+<!-- About Container -->
+<div class="container" id="about">
+  <div class="content" style="max-width:700px">
+    <h5 class="center padding-64"><span class="tag wide">Ganesh Chaturthi</span></h5>
+  <div class="container p-3">
+
+        <div class="fg-gallery">
+            <img src="images/10.jpg" alt="">
+            <img src="images/20.jpg" alt="">
+            <img src="images/30.jpg" alt="">
+            <img src="images/40.jpg" alt="">
+            <img src="images/50.jpg" alt="">
+            <img src="images/60.jpg" alt="">
+            <img src="images/70.jpg" alt="">
+            <img src="images/80.jpg" alt="">
+        </div>
+
+        <!--<div class="fg-gallery ns">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+        </div>-->
+
+    </div>
+    <div class="panel leftbar light-grey">
+      <p><i>"Ganesh Chaturthi, also known as Vinayaka Chaturthi, is a Hindu festival celebrating the arrival of Ganesha to earth from Kailash Parvat with his mother Goddess Parvati/Gauri. The festival is marked with the installation of Ganesha clay idols privately in homes, or publicly on elaborate pandals"</i></p>
+   </div>
+ 
+    <img src="img/Ganpati-02.jpg" style="width:100%;max-width:1000px" class="margin-top">
+   <p>Ganesha Chaturthi starts with Vedic hymns, prayers, vrata and hindu texts such as Ganesha Upanishad. Offerings of prasada after the prayer and distributing amongst the community people, prasad include sweets, modaka ( it is believed to be the favourite sweet of ganesha). This festival starts on the fourth day of Hindu luni-solar calendar month Bhadrapada, which normally falls in the month of August or September. The Ganesha chaturthi ends on the tenth day</p>
+   <p>Celebrations include four rituals.
+
+   <li> The first one is Pranapratistha. It involves the positioning of the idol or deity of Lord Ganesha into the pandals. This calls for a big celebration. People pray and sing various folk songs while bringing the deity to the Pandals. They play with colours as well.</li>
+   <li> The second stage is Shodasopachara. It involves praying to the lord and offering him puja.</li>
+   <li> The third stage is Uttarpuja. It involves a ceremony after which the deity can be moved from his position. After this ritual, the idol is moved among the public so that they can take his blessings.</li>
+   <li> The last stage is Ganpati Visarjan. At this stage, the idol is immersed into the river, sea or ocean. He is believed to go back to Lord Shiva and Goddess Parvati after the immersion.</li></p>
+   <img src="img/ganesh1.jpg" style="width:100%;max-width:400px" class="margin-top">
+   
+  </div>
+</div>
+
+<!-- Menu Container -->
+
+
+<!-- Footer -->
+<footer class="center light-grey padding-48 large">
+  <p>Designed by student name</p>
+</footer>
+<!-- Menu Container -->
+<script>
+        var a = new FgGallery('.fg-gallery', {
+            cols: 4,
+            style: {
+                border: '10px solid #fff',
+                height: '180px',
+                borderRadius: '5px',
+                boxShadow: '0 2px 10px -5px #858585',
+            }
+        })
+
+        var a = new FgGallery('.ns', {
+            cols: 3,
+            style: {
+                border: '0 solid #fff',
+                height: '240px',
+                borderRadius: '5px',
+            }
+        })
+    </script>
+
+</body>
+</html>
